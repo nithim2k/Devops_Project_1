@@ -1,7 +1,8 @@
 version: '3.8'
+
 services:
-  react-app:
+  web:
     build: .
     ports:
       - "80:80"
-    restart: unless-stopped
+    restart: always

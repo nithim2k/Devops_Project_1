@@ -1,2 +1,7 @@
 #!/bin/bash
-docker build -t your-dockerhub-username/devops-react-app:dev .
+
+# Build the Docker image
+docker-compose build
+
+# Tag the image for dev
+docker tag devops-build_web yourdockerhubusername/dev:latest
